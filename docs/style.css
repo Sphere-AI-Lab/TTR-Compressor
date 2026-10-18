@@ -16,3 +16,6 @@
 .why-normalization h3{font-size:21px}
 @media(max-width:800px){.topbar nav{gap:12px}.why-explanations{gap:25px}}
 @media(max-width:560px){.why-explanations{grid-template-columns:1fr;gap:22px;margin-top:25px}.why-explanations h3{font-size:22px}.topbar nav{gap:9px;font-size:9px}.topbar{gap:8px;padding:0 12px}.why-normalization{padding:10px 18px}}
+
+.hero-figure figcaption{font-size:14px}
+@media(max-width:560px){.hero-figure figcaption{font-size:12px}}
