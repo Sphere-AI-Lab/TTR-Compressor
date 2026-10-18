@@ -54,11 +54,11 @@
 <div class="comparison"><div><span class="small-label">Standard MLP · 2 × 2</span><strong>54.93</strong><span>N / 4 visual tokens</span></div><span class="comparison-arrow" aria-hidden="true">→</span><div><span class="small-label">TTR + Conv · 3 × 3</span><strong>54.85</strong><span>N / 9 visual tokens</span></div><div class="saving"><strong>55.6%</strong><span>fewer visual tokens<br>at comparable average performance</span></div></div>
 <div class="efficiency"><div><span class="section-label">Practical by design</span><h3>Expressive compression.<br>Comparable training time.</h3><p>The exact solve stays small. In the reported visual-merging setup, base TTR has training time comparable to MLP, with a slight reduction at 3 × 3 merging.</p><p class="chart-note">Figure 3 · 16 × H100 GPUs · wall-clock hours</p></div><div class="table-scroll"><table><thead><tr><th>Merger</th><th>2 × 2</th><th>3 × 3</th></tr></thead><tbody><tr><th>MLP</th><td>18.40 h</td><td>17.25 h</td></tr><tr class="highlight"><th>TTR-Compressor</th><td>18.55 h</td><td>17.02 h</td></tr></tbody></table><p class="chart-note">Base compressor: 2d parameters. Optional depthwise convolution increases this to 7d for language and 11d for vision.</p></div></div>
 </div></section>
-<section class="section citation-section" id="citation"><div class="container"><div class="citation-heading"><div><span class="section-label">04 / Citation</span></div></div><div class="code-header"><span>BibTeX</span><button id="copy-citation">Copy citation</button></div><pre><code id="bibtex">@techreport{yang2026ttrcompressor,
+<section class="section citation-section" id="citation"><div class="container"><div class="citation-heading"><div><span class="section-label">04 / Citation</span></div></div><div class="code-header"><span>BibTeX</span><button id="copy-citation">Copy citation</button></div><pre><code id="bibtex">@article{yang2026ttrcompressor,
   title={Rethinking Sequence Compression with Test-time Regression},
   author={Yang, Sihan and Huang, Jie and Li, Hanxuan and Guo, Yifan
           and Sun, Weigao and Zhong, Yiran and Liu, Weiyang},
-  institution={SphereLab},
+  journal={arXiv preprint arXiv:2610.xxxxx},
   year={2026}
 }</code></pre><span class="sr-only" id="copy-status" role="status"></span></div></section>
 </main><footer class="container"><a class="brand" href="#top"><span class="brand-mark">TTR</span>TTR-Compressor</a><p>SphereLab · Rethinking sequence compression</p><a href="#top">Back to top ↑</a></footer>
