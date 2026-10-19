@@ -40,4 +40,4 @@
 
 /* Independent display rows share the same left origin. */
 .dual-equation>.math{display:block}
-.dual-equation>.math+.math{margin-top:20px}
+.dual-equation>.math+.math{margin-top:20px;padding-left:0.22em}
