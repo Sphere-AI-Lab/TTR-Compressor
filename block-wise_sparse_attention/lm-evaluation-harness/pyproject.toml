@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lm_eval"
+version = "0.4.13.dev0"
+authors = [
+    { name = "EleutherAI", email = "contact@eleuther.ai" }
+]
+description = "A framework for evaluating language models"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "datasets>=2.16.0",
+    "pyyaml>=6.0",
+    "numpy",
+    "evaluate>=0.4.0",
+    "jinja2",
+    "pytablewriter",
+    "rouge-score>=0.0.4",
+    "sacrebleu>=1.5.0",
+    "scikit-learn>=0.24.1",
+    "sqlitedict",
+    "dill",
+    "word2number",
+    "more_itertools",
+    "typing_extensions",
+    "tqdm>=4.59.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["lm_eval*"]
+
+# required to include yaml files in pip installation
+[tool.setuptools.package-data]
+lm_eval = ["**/*.yaml", "tasks/**/*"]
+
+[project.scripts]
+lm-eval = "lm_eval.__main__:cli_evaluate"
+lm_eval = "lm_eval.__main__:cli_evaluate"
+
+[project.urls]
+Homepage = "https://github.com/EleutherAI/lm-evaluation-harness"
+Repository = "https://github.com/EleutherAI/lm-evaluation-harness"
+
+[project.optional-dependencies]
+hf = ["transformers>=4.1", "torch>=1.8", "accelerate>=0.26.0", "peft>=0.2.0"]
+ruler = ["nltk", "wonderwords", "scipy"]
