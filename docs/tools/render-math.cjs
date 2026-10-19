@@ -6,7 +6,7 @@ const katex = require('../assets/katex/katex.min.js');
 const file = path.join(__dirname, '../index.html');
 let html = fs.readFileSync(file, 'utf8');
 // Each generated formula ends at a marker, allowing safe regeneration.
-html = html.replace(/(<span class="math [^"]*" data-display="(true|false)" data-tex="([^"]*)">)(?:[\s\S]*?<!--\/math-->|<\/span>)/g,
+html = html.replace(/(<span class="math [^"]*" data-display="(true|false)" data-tex="([^"]*)">)(?:<\/span>(?!<!--\/math-->)|[\s\S]*?<!--\/math-->)/g,
  (_, opening, display, encoded) => {
   const tex = encoded.replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
   return opening + katex.renderToString(tex, {displayMode: display === 'true', throwOnError: true, strict: 'error', output: 'htmlAndMathml', trust: false}) + '</span><!--/math-->';

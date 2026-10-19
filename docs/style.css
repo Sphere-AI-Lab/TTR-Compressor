@@ -20,22 +20,20 @@
 .hero-figure figcaption{font-size:14px}
 @media(max-width:560px){.hero-figure figcaption{font-size:12px}}
 
-/* Locally rendered mathematics: scoped to avoid inherited prose styling. */
+/* Static mathematics: one formula, with no duplicate responsive markup. */
 .math{font-style:normal;white-space:nowrap}
 .math .katex{font-size:1.08em}
-.equation-panel{padding:30px 24px}
-.equation{font-size:24px;line-height:normal;margin:26px 0 28px;overflow:visible;white-space:normal}
-.equation .katex-display{margin:0;padding:8px 0}
-.math-compact{display:none}
-.equation-defs{font-size:16px;font-style:normal;gap:18px 32px;align-items:center}
-.equation-panel p{margin-top:23px;line-height:1.9}
-.solve{min-width:0;padding:17px 22px}
-.solve .dual-equation{font-size:20px;margin:23px 0;line-height:normal;overflow-x:auto;overflow-y:hidden;padding:5px 0}
+.equation-panel{padding:23px 24px 21px;background:#fcfafb;border-color:#e6dde0}
+.equation{font-size:24px;line-height:normal;margin:19px 0 23px;overflow-x:auto;overflow-y:hidden;white-space:normal;padding:5px 0}
+.equation .katex-display{margin:0;padding:4px 0}
+.equation-defs{font-size:15px;font-style:normal;gap:16px 32px;align-items:center;border-top:1px solid #eae3e5;padding-top:18px}
+.equation-panel p{margin-top:17px;line-height:1.8}
+.solve{min-width:0;padding:12px 22px}
+.solve .dual-equation{font-size:22px;margin:18px 0;line-height:normal;overflow-x:auto;overflow-y:hidden;padding:5px 0}
 .solve .katex-display{margin:0;text-align:left}
+.solve .katex-display>.katex{text-align:left}
 .method-detail>div{min-width:0}
 .solve-note .math .katex{font-size:1.1em}
-@media(max-width:900px){.equation{font-size:21px}.solve .dual-equation{font-size:17px}}
-@media(max-width:650px){.equation .math-wide{display:none}.equation .math-compact{display:block}.equation{font-size:21px}.equation-defs{flex-direction:column;gap:15px}.equation-panel{padding:25px 16px}.method-detail{grid-template-columns:1fr}.solve .dual-equation{font-size:21px}}
-@media(max-width:380px){.equation{font-size:18px}.solve .dual-equation{font-size:18px}.solve{padding-left:16px;padding-right:12px}}
-.solve .katex-display>.katex{text-align:left}
-@media(min-width:901px){.equation{font-size:27px}}
+@media(max-width:900px){.equation{font-size:22px}.solve .dual-equation{font-size:18px}}
+@media(max-width:650px){.equation{font-size:clamp(14px,3.8vw,22px)}.equation-defs{flex-direction:column;gap:12px;font-size:15px}.equation-panel{padding:22px 12px 18px}.method-detail{grid-template-columns:1fr}.solve .dual-equation{font-size:21px}}
+@media(max-width:380px){.equation{font-size:13px}.solve .dual-equation{font-size:18px}.solve{padding-left:16px;padding-right:12px}}
