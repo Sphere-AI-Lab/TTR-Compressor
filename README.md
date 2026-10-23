@@ -82,7 +82,7 @@ If you find our work and this codebase helpful, please consider starring this re
   title={Rethinking Sequence Compression with Test-time Regression},
   author={Yang, Sihan and Huang, Jie and Li, Hanxuan and Guo, Yifan
           and Sun, Weigao and Zhong, Yiran and Liu, Weiyang},
-  journal={arXiv preprint arXiv:2610.xxxxx},
+  journal={arXiv preprint arXiv:2610.31574},
   year={2026}
 }
 ```
