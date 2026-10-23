@@ -2,8 +2,8 @@
 
 <p align="center">
   <a href="https://spherelab.ai/ttr-compressor">🌐 Homepage</a> |
-  <a href="https://arxiv.org/pdf/https://arxiv.org/abs/XXXX.XXXXX">📑 Paper</a>  |
-  <a href="https://arxiv.org/abs/https://arxiv.org/abs/XXXX.XXXXX">📖 arXiv</a> |
+  <a href="https://arxiv.org/pdf/2610.31574">📑 Paper</a>  |
+  <a href="https://arxiv.org/abs/2610.31574">📖 arXiv</a> |
   <a href="https://huggingface.co/collections/SphereLab/ttr-compressor">🤗 Models</a> 
 </p>
 
